@@ -1,1 +1,1 @@
-const displayError = (message) => `<div class="error">${message}</div>`;
+export const displayError = (message) => `<div class="error">${message}</div>`;

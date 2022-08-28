@@ -1,3 +1,5 @@
+import { displayError } from "./components/displayError.js";
+
 const dataContainer = document.querySelector(".dataContainer");
 const url =
   "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=eee417cc2fb64593bc1b1b594ac86178";
