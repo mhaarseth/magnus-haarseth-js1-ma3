@@ -1,3 +1,1 @@
-function displayError(message) {
-  return `<div class="error">${message}</div>`;
-}
+const displayError = (message) => `<div class="error">${message}</div>`;
