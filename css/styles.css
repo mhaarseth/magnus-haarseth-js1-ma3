@@ -3,12 +3,11 @@ Added some styling just to fresh up on CSS. Much has been forgotten.
 */
 
 body {
-  width: 1200px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1,
-.error {
+h1 {
   text-align: center;
 }
 
@@ -18,23 +17,21 @@ h1,
   text-transform: uppercase;
 }
 
-.dataBox {
-  width: 260px;
-  height: 260px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  border: 2.5px solid black;
-  margin: 5px;
-  border-radius: 5%;
-}
-
 .dataContainer {
   margin: 0 auto;
   display: flex;
   align-content: center;
   max-width: 1200px;
   flex-wrap: wrap;
+}
+
+.dataBox {
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  border-radius: 5%;
 }
 
 /*
