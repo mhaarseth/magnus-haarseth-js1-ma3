@@ -1,0 +1,57 @@
+body {
+  width: 600px;
+  margin: auto;
+}
+
+h1,
+.dataContainer {
+  text-align: center;
+}
+
+/*
+
+Taught myself how to make a simple loading animation, but the call to the API is so fast it only shows for a split second.
+
+*/
+
+.dataContainer span {
+  margin: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: black;
+  display: inline-block;
+  animation-name: loader;
+  animation-duration: 5s;
+  animation-iteration-count: 10;
+}
+
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 1s;
+}
+
+.dot3 {
+  animation-delay: 2s;
+}
+
+@keyframes loader {
+  0% {
+    background: black;
+  }
+  50% {
+    background: white;
+  }
+  100% {
+    background: black;
+  }
+  50% {
+    background: white;
+  }
+  0% {
+    background: black;
+  }
+}

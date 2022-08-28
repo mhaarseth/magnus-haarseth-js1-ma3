@@ -16,10 +16,10 @@ async function getGames() {
       if (i === 8) {
         break;
       }
-      dataContainer.innerHTML += `<div class="dataContainer">${games[i].name} - ${games[i].rating} - ${games[i].tags.length}</div>`;
+      dataContainer.innerHTML += `<div class="dataContainer">${games[i].name} - Rating: ${games[i].rating} - No. of tags: ${games[i].tags.length}</div>`;
     }
   } catch (error) {
-    dataContainer.innerHTML += `<div class="error">An error occured</div>`;
+    dataContainer.innerHTML = `<div class="error">An error occured</div>`;
   }
 }
 
