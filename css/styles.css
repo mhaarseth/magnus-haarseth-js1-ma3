@@ -20,7 +20,8 @@ h1 {
 .dataContainer {
   margin: 0 auto;
   display: flex;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   max-width: 1200px;
   flex-wrap: wrap;
 }
