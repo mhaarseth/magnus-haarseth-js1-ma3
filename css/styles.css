@@ -1,16 +1,45 @@
+/*
+Added some styling just to fresh up on CSS. Much has been forgotten.
+*/
+
 body {
-  width: 600px;
+  width: 1200px;
   margin: auto;
 }
 
 h1,
-.dataContainer {
+.error {
   text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.dataBox {
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2.5px solid black;
+  margin: 5px;
+  border-radius: 5%;
+}
+
+.dataContainer {
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 /*
 
-Taught myself how to make a simple loading animation, but the call to the API is so fast it only shows for a split second.
+Made a simple loading animation, but the call to the API is so fast it only shows for a split second.
 
 */
 
@@ -23,7 +52,7 @@ Taught myself how to make a simple loading animation, but the call to the API is
   display: inline-block;
   animation-name: loader;
   animation-duration: 5s;
-  animation-iteration-count: 10;
+  animation-iteration-count: 1000;
 }
 
 .dot1 {
